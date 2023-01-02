@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Quiz2">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#74ADF4"
+            android:gravity="center"
+            android:text="Que país é esse ?"
+            android:textColor="#070707"
+            android:textSize="24sp" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            app:srcCompat="@drawable/usa" />
+
+        <RadioGroup
+            android:id="@+id/rdgQuiz2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RadioButton
+                android:id="@+id/rdbAutralia"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Austrália" />
+
+            <RadioButton
+                android:id="@+id/rdbDinamarca"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Dinamarca" />
+
+            <RadioButton
+                android:id="@+id/rdbUSA"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Estados Unidos" />
+
+            <RadioButton
+                android:id="@+id/rdbJapao"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Japão" />
+
+            <Button
+                android:id="@+id/btnResponder2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:enabled="false"
+                android:onClick="responder2"
+                android:text="@string/btnResponder" />
+        </RadioGroup>
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

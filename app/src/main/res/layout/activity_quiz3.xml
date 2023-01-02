@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Quiz3">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#74ADF4"
+            android:gravity="center"
+            android:text="Que país é esse ?"
+            android:textColor="#050505"
+            android:textSize="24sp" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/china" />
+
+        <RadioGroup
+            android:id="@+id/rdgQuiz3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RadioButton
+                android:id="@+id/rdbChina"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="China" />
+
+            <RadioButton
+                android:id="@+id/rdbMadagascar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Madagascar" />
+
+            <RadioButton
+                android:id="@+id/rdbLaos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Laos" />
+
+            <RadioButton
+                android:id="@+id/rdbIslandia"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Islândia" />
+
+            <Button
+                android:id="@+id/btnResponder3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:enabled="false"
+                android:onClick="responder3"
+                android:text="@string/btnResponder" />
+        </RadioGroup>
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

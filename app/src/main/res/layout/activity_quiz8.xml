@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Quiz8">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#74ADF4"
+            android:gravity="center"
+            android:text="Que país é esse ?"
+            android:textColor="#090909"
+            android:textSize="24sp" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/guatemala" />
+
+        <RadioGroup
+            android:id="@+id/rdgQuiz8"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RadioButton
+                android:id="@+id/rdbGuatemala"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Guatemala" />
+
+            <RadioButton
+                android:id="@+id/rdbArgentina"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Argentina" />
+
+            <RadioButton
+                android:id="@+id/rdbMalasia"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Malásia" />
+
+            <RadioButton
+                android:id="@+id/rdbUruguai"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Uruguai" />
+
+            <Button
+                android:id="@+id/btnResponder8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:enabled="false"
+                android:onClick="responder8"
+                android:text="@string/btnResponder" />
+        </RadioGroup>
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

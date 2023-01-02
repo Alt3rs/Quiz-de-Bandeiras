@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Quiz10">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#74ADF4"
+            android:gravity="center"
+            android:text="Que país é esse ?"
+            android:textColor="#090909"
+            android:textSize="24sp" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/italia" />
+
+        <RadioGroup
+            android:id="@+id/rdgQuiz10"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RadioButton
+                android:id="@+id/rdbIrlanda"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Irlanda" />
+
+            <RadioButton
+                android:id="@+id/rdbEscocia"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Escôcia" />
+
+            <RadioButton
+                android:id="@+id/rdbFinlandia"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Finlândia" />
+
+            <RadioButton
+                android:id="@+id/rdbItalia"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Itália" />
+
+            <Button
+                android:id="@+id/btnResponder10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:enabled="false"
+                android:onClick="responder10"
+                android:text="@string/btnResponder" />
+        </RadioGroup>
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
